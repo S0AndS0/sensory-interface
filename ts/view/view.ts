@@ -56,7 +56,7 @@ function createGrid() {
 }
 
 function addOnClickAndOnTouchSoundToGrid() {
-  $('div[role="gridcell"]').each((index, element) => {
+  $('div[role="gridcell"]').each((_index, element) => {
     $(element).click(onClick);
     $(element).on('touchstart', startSoundPlayback);
     $(element).on('touchmove', onCellChange);
