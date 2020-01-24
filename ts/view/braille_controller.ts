@@ -25,10 +25,27 @@ class BrailleController {
     parent.appendChild(textarea[0]);
     textarea.focus();
 
+    /**
+      Trade above for bellow once callers and modders are not JQuery dependent
+    */
+
+    // const textarea = document.createElement('textarea');
+    // textarea.id = 'brailleControllerText';
+    // textarea.addEventListener('keydown', this.onKeyDown);
+    // textarea.addEventListener('keyup', this.noopEventCatcher);
+    // textarea.addEventListener('keypress', this.noopEventCatcher);
+    // textarea.addEventListener('click', this.noopEventCatcher);
+    // textarea.addEventListener('mousedown', this.noopEventCatcher);
+    // textarea.addEventListener('mouseup', this.noopEventCatcher);
+    // parent.appendChild(textarea[0]);
+    // textarea.focus();
     this.textarea = textarea;
 
     // Note: We initially tried document.addEventListener('selectionchange', func)
     //       but that didn't work in Firefox.
+    //
+    // Note: That may be because `textarea.addEventListener` should have
+    //       been used instead of `document.addEventListener`
     setInterval(this.checkSelection, 50);
     this.currentPosition = -1;
   }
@@ -110,7 +127,8 @@ class BrailleController {
   }
 
   setBraille(text) {
-    this.textarea.text(text);
+    // this.textarea.text(text);
+    this.textarea['value'] = text;
   }
 
   setSelectionListener(listener) {
@@ -118,7 +136,7 @@ class BrailleController {
   }
 
   onSelection() {
-    if (brailleController.selectionListener == null) {
+    if (brailleController.selectionListener === null) {
       return;
     }
     const cursorPosition = brailleController.currentPosition;

@@ -33,7 +33,7 @@ function updateURL() {
 function onRadioChange(radio) {
   const minValuePicker = document.getElementById('minValue');
   const maxValuePicker = document.getElementById('maxValue');
-  if (radio.value == 'auto') {
+  if (radio.value === 'auto') {
     minValuePicker['disabled'] = true;
     maxValuePicker['disabled'] = true;
   } else {

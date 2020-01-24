@@ -53,10 +53,10 @@ function startSoundPlayback() {
 }
 
 function playSound() {
-  if (audioContext.state == 'suspended') {
+  if (audioContext.state === 'suspended') {
     audioContext.resume();
   }
-  if (getUrlParam('instrumentType') == 'synthesizer') {
+  if (getUrlParam('instrumentType') === 'synthesizer') {
     playSoundWithOscillator();
   } else {
     playSoundFromAudioFile();
@@ -104,7 +104,7 @@ function getFileToPlay(currentCell) {
   const NUMBER_OF_TRACKS = 22;
   let trackNumber = (selectedValue - minValue) / (maxValue - minValue) * NUMBER_OF_TRACKS;
   trackNumber = Math.ceil(trackNumber);
-  if (trackNumber == 0) {
+  if (trackNumber === 0) {
     trackNumber++;
   }
   const instrumentType = getUrlParam('instrumentType');
@@ -129,6 +129,7 @@ function stopSoundPlayback() {
 }
 
 function speakSelectedCell() {
+// function speakSelectedCell(cell) {
   const synth = window.speechSynthesis;
   synth.cancel();
   let value = $(selectedCell).first().text();

@@ -7,7 +7,7 @@ let focusedRowIndex: number = 0;
 let focusedColIndex: number = 0;
 
 function brailleControllerSelectionListener(event) {
-  console.log('brailleControllerSelectionListener: position=' + event.position + ' character=' + event.character);
+  console.log(`brailleControllerSelectionListener: position=${event.position} character=${event.character}`);
   // First 2 characters and last character are not data
   const position = event.position - 2;
   if (position >= 0 && position < data[0].length) {
@@ -42,6 +42,7 @@ function createGrid() {
       let gridCell = $(document.createElement('div'));
       gridCell.attr('role', 'gridcell');
       gridCell.prop('className', 'cell');
+      // Need to catch `undefined` state prior to sending into next command
       gridCell.append(document.createTextNode(data[rowIndex][colIndex].toString()));
       gridCell.attr('aria-readonly', 'true');
       gridCell.attr('row', rowIndex);
@@ -55,7 +56,7 @@ function createGrid() {
 }
 
 function addOnClickAndOnTouchSoundToGrid() {
-  $('div[role="gridcell"]').each(function (index, element) {
+  $('div[role="gridcell"]').each((index, element) => {
     $(element).click(onClick);
     $(element).on('touchstart', startSoundPlayback);
     $(element).on('touchmove', onCellChange);
@@ -171,6 +172,7 @@ function updateSelectedCell(cell) {
   $(selectedCell).css('background-color', '#ffff4d');
   $(selectedCell).css('border', '1px solid #0099ff');
   startSoundPlayback();
+  // speakSelectedCell(cell);
   speakSelectedCell();
 }
 
