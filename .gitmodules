@@ -1,7 +1,7 @@
 [submodule "build"]
 	path = build
 	url = git@github.com:S0AndS0/sensory-interface.git
-	branch = master
+	branch = fork-master
 [submodule "tests"]
 	path = tests
 	url = git@github.com:S0AndS0/sensory-interface.git
