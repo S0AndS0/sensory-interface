@@ -1,0 +1,39 @@
+{% comment %}
+<!--
+  Source: https://raw.githubusercontent.com/jekyll/minima/v2.0.0/_layouts/home.html
+  License: MIT
+  Modified_For: hasadna/sensory-interface
+-->
+{% endcomment %}
+
+---
+layout: default
+---
+<div class="home">
+
+  <h1 class="page-heading">{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</h1>
+  {% include home/navebar.html %}
+
+  {{ content }}
+
+  {% include home/side-bar.html %}
+
+  {% include home/language-pop-up.html %}
+
+  <!--
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+  -->
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>

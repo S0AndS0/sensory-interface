@@ -1,0 +1,35 @@
+<!--========== header ==========-->
+<header class="header-img">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-12 text-center">
+        <img class="logo" src="assets/images/logo/s-logo-white.svg" alt="main logo" aria-hidden="true">
+        <br>
+        <br>
+
+        <p class="main-description" style="" id="description">
+          {{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}
+        </p>
+        <br>
+
+        <a target="_blank"
+           href="builder/index.html"
+           class="button"
+           style="margin-bottom: 7px;"
+           role="button"
+           id="getStarted">
+          Get started
+        </a>
+        <br>
+
+        <a href="#about-anchor" class="link" id="learnMore" style="z-index: 999999;position: relative;">Learn more</a>
+        <br>
+        <img class="product-img" src="assets/images/product.svg" alt="product image" style="margin-bottom: -210px;"
+          aria-hidden="true">
+      </div>
+    </div>
+  </div>
+
+</header>
+<!--========== header end ==========-->

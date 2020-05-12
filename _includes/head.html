@@ -1,0 +1,62 @@
+{% comment %}
+<!--
+  Source: https://raw.githubusercontent.com/jekyll/minima/v2.0.0/_includes/head.html
+  License: MIT
+  Modified_For: hasadna/sensory-interface
+-->
+{% endcomment %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | relative_url }}">
+
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
+
+  <!--========== web tags ==========-->
+  <meta name="description" content="{{ site.description }}" />
+
+  <!--========== social media tags ==========-->
+  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url }}" />
+  <meta property="og:image" content="assets/images/social-image.png" />
+
+  <!--========== google fonts ==========-->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+
+  <!--========== css files ==========-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!--========== favicon ==========-->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+  <!---========== scripts (third-party remote) ==========-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+
+  <!---========== scripts (third-party remote) ==========-->
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+
+  <!---========== scripts (site) ==========-->
+  <script defer src="assets/js/scripts.js"></script>
+  <script defer src="assets/js/utils.js"></script>
+  <script defer src="assets/js/languages/i18n.js"></script>
+  <script defer src="assets/js/languages/he.js"></script>
+  <script defer src="assets/js/languages/en.js"></script>
+</head>
