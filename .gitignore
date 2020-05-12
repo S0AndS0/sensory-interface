@@ -65,4 +65,4 @@ node_modules/
 .env
 
 # JQuery postbuild
-public/jquery/jquery.min.js
+#public/jquery/jquery.min.js
