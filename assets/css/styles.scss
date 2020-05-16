@@ -1,3 +1,6 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
 /*==========styles==========*/
 
 html {
@@ -586,7 +589,7 @@ span.focus--mouse:focus,
 
 .header-img {
   background-size: cover;
-  background-image: url('../assets/images/back.svg');
+  background-image: url("{{'/assets/images/back.svg' | relative_url }}");
 
   background-position: 49% 40%;
   height: 100vh;
