@@ -4,7 +4,7 @@
     {%- unless script.src -%}{%- continue -%}{%- endunless -%}
     {%- assign src = script.src -%}
     {%- unless src contains "https"-%}{%- assign src = script.src | relative_url -%}{%- endunless -%}
-    <script src="{{ src }}"{% if script.integrity %} integrity="{{ script.integrity }}"{% endif %}{% if script.crossorigin %} crossorigin="{{ script.crossorigin }}"{% endif %}></script>
+    <script type="text/javascript" src="{{ src }}"{% if script.integrity %} integrity="{{ script.integrity }}"{% endif %}{% if script.crossorigin %} crossorigin="{{ script.crossorigin }}"{% endif %}></script>
   {% endfor %}
 {%- endif -%}
 {% endcapture %}{{ workspace__scripts | strip }}{% assign workspace__scripts = nil %}
