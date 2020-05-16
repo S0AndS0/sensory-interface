@@ -66,3 +66,7 @@ node_modules/
 
 # JQuery postbuild
 #public/jquery/jquery.min.js
+
+# Jekyll
+.bundle
+_config_url.yml
