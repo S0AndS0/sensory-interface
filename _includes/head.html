@@ -14,7 +14,6 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | relative_url }}">
 
@@ -29,7 +28,7 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url }}" />
-  <meta property="og:image" content="assets/images/social-image.png" />
+  <meta property="og:image" content="{{ 'assets/images/social-image.png' | absolute_url }}" />
 
   <!--========== google fonts ==========-->
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
@@ -40,7 +39,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="{{ 'assets/css/styles.css' | absolute_url }}" />
 
   <!--========== favicon ==========-->
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
