@@ -4,6 +4,10 @@ title: מדריך למערכת Sensory Interface
 language:
   code: he
   direction: rtl
+
+scripts:
+  - src: assets/js/jquery-3.4.1.min.js
+  - src: assets/js/scripts.js
 ---
 
 

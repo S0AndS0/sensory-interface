@@ -4,6 +4,10 @@ title: Sensory Interface guide
 language:
   code: en
   direction: ltr
+
+scripts:
+  - src: assets/js/jquery-3.4.1.min.js
+  - src: assets/js/scripts.js
 ---
 
 
