@@ -1,6 +1,9 @@
 ---
 layout: page
 title: נגישות לעדכוני נתוני קורנה בישראל
+language:
+  code: he
+  direction: rtl
 ---
 
 
