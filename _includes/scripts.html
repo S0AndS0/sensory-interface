@@ -3,7 +3,7 @@
   {% for script in page.scripts %}
     {%- unless script.src -%}{%- continue -%}{%- endunless -%}
     {%- assign src = script.src -%}
-    {%- unless src contains "https"-%}{%- assign src = script.src | relative_url -%}{%- endunless -%}
+    {%- unless src contains "https"-%}{%- assign src = script.src | absolute_url -%}{%- endunless -%}
     <script type="text/javascript" src="{{ src }}"{% if script.integrity %} integrity="{{ script.integrity }}"{% endif %}{% if script.crossorigin %} crossorigin="{{ script.crossorigin }}"{% endif %}></script>
   {% endfor %}
 {%- endif -%}
