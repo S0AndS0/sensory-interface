@@ -6,8 +6,8 @@ language:
   direction: ltr
 
 scripts:
-  - src: assets/js/jquery-3.4.1.min.js
-  - src: assets/js/scripts.js
+  - src: /assets/js/jquery-3.4.1.min.js
+  - src: /assets/js/scripts.js
 ---
 
 
