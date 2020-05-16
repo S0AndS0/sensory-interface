@@ -1,3 +1,4 @@
+{% capture workspace__header %}
 <!--========== header ==========-->
 <header class="header-img">
 
@@ -23,13 +24,21 @@
         </a>
         <br>
 
-        <a href="#about-anchor" class="link" id="learnMore" style="z-index: 999999;position: relative;">Learn more</a>
+        <a href="#about-anchor"
+           class="link"
+           id="learnMore"
+           style="z-index: 999999;position: relative;">Learn more</a>
         <br>
-        <img class="product-img" src="assets/images/product.svg" alt="product image" style="margin-bottom: -210px;"
-          aria-hidden="true">
+
+        <img class="product-img"
+             src="assets/images/product.svg"
+             alt="product image"
+             style="margin-bottom: -210px;"
+             aria-hidden="true">
       </div>
     </div>
   </div>
 
 </header>
 <!--========== header end ==========-->
+{% endcapture %}{{ workspace__header | strip }}{% assign workspace__header = nil %}

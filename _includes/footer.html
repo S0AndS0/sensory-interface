@@ -1,3 +1,4 @@
+{% capture workspace__footer %}
 <!--========== footer ==========-->
 <footer>
   <div class="container">
@@ -45,3 +46,4 @@
   </div>
 </footer>
 <!--========== footer end ==========-->
+{% endcapture %}{{ workspace__footer | strip }}{% assign workspace__footer = nil %}

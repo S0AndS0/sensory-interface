@@ -1,3 +1,4 @@
+{% capture workspace__navbar %}
 <!--========== navbar ==========-->
 <nav class="wonder-nav">
   <ul class="wonder-nav-ul" dir="ltr">
@@ -64,3 +65,4 @@
   </ul>
 </nav>
 <!--========== navbar end ==========-->
+{% endcapture %}{{ workspace__navbar | strip }}{% assign workspace__navbar = nil %}
