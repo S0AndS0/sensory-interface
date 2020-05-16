@@ -1,5 +1,6 @@
 {% capture workspace__scripts %}
 {% if page.scripts %}
+  <!---========== scripts ==========-->
   {% for script in page.scripts %}
     {%- unless script.src -%}{%- continue -%}{%- endunless -%}
     {%- assign src = script.src -%}
