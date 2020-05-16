@@ -3,8 +3,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   The Sensory Interface project aims to help people with blindness access data such as graphs and other complex numerical data
 # baseurl: "" # the subpath of your site, e.g. /blog
 
-# url: 'https://hasadna.github.io'
-url: 'https://s0ands0.github.io'
+# repository: hasadna/sensory-interface
+repository: S0AndS0/sensory-interface
+
+# url: 'https://hasadna.github.io/sensory-interface'
+url: 'https://s0ands0.github.io/sensory-interface'
 
 
 # Build settings

@@ -70,3 +70,4 @@ node_modules/
 # Jekyll
 .bundle
 _config_url.yml
+_config_repository.yml
