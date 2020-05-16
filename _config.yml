@@ -15,6 +15,10 @@ plugins:
   - jekyll-github-metadata
 
 
+language:
+  code: en
+
+
 # Collection settings
 collections_dir: public
 collections:

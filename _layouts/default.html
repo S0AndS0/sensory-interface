@@ -6,7 +6,7 @@
 -->
 {% endcomment %}
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.language.code | default: site.language.code | default: 'en' }}" dir="{{ page.language.direction | default: 'auto' }}">
 
   {% include head.html %}
 
