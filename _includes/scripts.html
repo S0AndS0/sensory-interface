@@ -1,0 +1,16 @@
+{% capture workspace__scripts %}
+{% if page.scripts %}
+  {% for script in page.scripts %}
+    {% unless script.src %}{% continue %}{% endunless %}
+    <script type="text/javascript"
+      src="{{ script.src }}"
+      {% if script.integrity %}
+        integrity="{{ script.integrity }}"
+      {% endif %}
+      {% if script.crossorigin %}
+        crossorigin="{{ script.crossorigin }}"
+      {% endif %}
+    ></script>
+  {% endfor %}
+{% endif %}
+{% endcapture %}{{ workspace__scripts | strip }}{% assign workspace__scripts = nil %}
