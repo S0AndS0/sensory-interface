@@ -26,6 +26,18 @@ collections:
     output: true
     permalink: /:collection/:name/
 
+  braille:
+    output: true
+    permalink: /:collection/:name/
+
+  builder:
+    output: true
+    permalink: /:collection/:name/
+
+  corona:
+    output: true
+    permalink: /:collection/:name/
+
   index:
     output: true
     permalink: /:collection/:name/
@@ -35,5 +47,13 @@ collections:
     permalink: /:collection/:name/
 
   privacy:
+    output: true
+    permalink: /:collection/:name/
+
+  usage:
+    output: true
+    permalink: /:collection/:name/
+
+  view:
     output: true
     permalink: /:collection/:name/
