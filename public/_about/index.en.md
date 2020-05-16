@@ -1,6 +1,9 @@
 ---
 layout: page
 title: About Sensory interface
+language:
+  code: en
+  direction: ltr  
 ---
 
 

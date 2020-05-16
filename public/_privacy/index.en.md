@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Privacy Considerations
+language:
+  code: en
+  direction: ltr
 ---
 
 

@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Builder - Sensory interface
+language:
+  code: en
+  direction: ltr
 ---
 
 

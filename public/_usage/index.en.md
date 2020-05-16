@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Sensory Interface guide
+language:
+  code: en
+  direction: ltr
 ---
 
 

@@ -1,6 +1,9 @@
 ---
 layout: page
 title: מדריך למערכת Sensory Interface
+language:
+  code: he
+  direction: rtl
 ---
 
 

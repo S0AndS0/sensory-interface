@@ -1,6 +1,9 @@
 ---
 layout: page
 title: אודות השימוש בשיטת הברייל במערכת Sensory interface
+language:
+  code: he
+  direction: rtl
 ---
 
 
