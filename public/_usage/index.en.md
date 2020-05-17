@@ -69,7 +69,7 @@ You should now see an accessible graph such as the one [in this link](https://se
 - The right side (cells 31 to 40) displays the data element under the cursor in the left side more accurately. You  can think of the right side as an area where the data element under the cursor is displayed under a greater magnification level
 
 
-To learn more on how we use braille in the system, please click [here](tutorial_braille_en.html).
+To learn more on how we use braille in the system, please click [here]({{ '/braille/index-en/' | relative_url }}).
 
 
 Thanks for your time and efforts and we hope you enjoy viewing graphs!

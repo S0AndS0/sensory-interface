@@ -78,4 +78,4 @@ scripts:
 [נודה לך על משוב קצר בטופס מקוון ואנונימי](https://docs.google.com/forms/d/e/1FAIpQLSfaYX_axRDfrM_BCRNiwsQMA5PHyPG_gkLeUyNZJXCSdbCILg/viewform)
 
 
-למידע נוסף על איך עושים שימוש בברייל במערכת אנא לחצו [כאן](tutorial_braille_he.html)
+למידע נוסף על איך עושים שימוש בברייל במערכת אנא לחצו [כאן]({{ '/braille/index-en/' | relative_url }})
