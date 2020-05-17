@@ -9,10 +9,11 @@ layout: default
 -->
 {% endcomment %}
 
+{% include home/header.html %}
+{% include home/navbar.html %}
 <div class="home">
 
-  {% include home/header.html %}
-  {% include home/navbar.html %}
+  <!-- <h1 class="page-heading">{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</h1> -->
 
   {{ content }}
 
@@ -32,8 +33,7 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+  <p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></p>
   -->
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
 </div>
+{% include footer.html %}
