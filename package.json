@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "license": "AGPL-3.0",
   "scripts": {
-    "build": "tsc --build",
+    "build-all": "npm run ts-build && npm run jekyll-build",
+    "ts-build": "tsc --build",
+    "jekyll-build": "bundle exec jekyll build --config _config.yml --destination srv",
     "ci-test": "jest --coverage",
     "ci-watch": "jest --coverage --watchAll"
   },
@@ -46,6 +48,7 @@
   "devDependencies": {
     "@types/bootstrap": "^4.3.2",
     "@types/jquery": "^3.3.31",
+    "jekyll": "^3.0.0-beta1",
     "jest": "^25.1.0",
     "typescript": "^3.7.4"
   }
