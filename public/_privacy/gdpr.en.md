@@ -245,7 +245,7 @@ ___
 
 
 ## Privacy policies of other websites
-[heading__privacy_policies_of_other_websites]: privacy-policies-of-other-websites
+[heading__privacy_policies_of_other_websites]: #privacy-policies-of-other-websites
 
 
 The {{ page.company.name }} website contains links to other websites. Our privacy policy applies only to our website, so if you click a link to another website, you should read their privacy policy.
