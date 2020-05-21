@@ -5,7 +5,21 @@
     {%- unless script.src -%}{%- continue -%}{%- endunless -%}
     {%- assign src = script.src -%}
     {%- unless src contains "https"-%}{%- assign src = script.src | relative_url -%}{%- endunless -%}
-    <script type="text/javascript" src="{{ src }}"{% if script.integrity %} integrity="{{ script.integrity }}"{% endif %}{% if script.crossorigin %} crossorigin="{{ script.crossorigin }}"{% endif %}{% if script.defer %} defer{% endif %}></script>
+
+    {% capture script_attributes %}src="{{ src }}"{% endcapture %}
+    {% if script.integrity %}
+      {% capture script_attributes %}{{ script_attributes }} integrity="{{ script.integrity }}"{% endcapture %}
+    {% endif %}
+
+    {% if script.crossorigin %}
+      {% capture script_attributes %}{{ script_attributes }} crossorigin="{{ script.crossorigin }}"{% endcapture %}
+    {% endif %}
+
+    {% if script.defer %}
+      {% capture script_attributes %}{{ script_attributes }} defer{% endcapture %}
+    {% endif %}
+
+    <script type="text/javascript" {{ script_attributes }}></script>
   {% endfor %}
 {%- endif -%}
 {% endcapture %}{{ workspace__scripts | strip }}{% assign workspace__scripts = nil %}
