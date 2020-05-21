@@ -12,7 +12,7 @@ scripts:
 
   - src: https://unpkg.com/papaparse@latest/papaparse.min.js
 
-  - src: /assets/js/jquery-3.4.1.min.js
+  - src: /assets/js/jquery/jquery-3.4.1.min.js
   - src: /assets/js/builder/builder.js
   - src: /assets/js/view/view.js
 ---

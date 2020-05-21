@@ -6,7 +6,7 @@ language:
   direction: rtl
 
 scripts:
-  - src: /assets/js/jquery-3.4.1.min.js
+  - src: /assets/js/jquery/jquery-3.4.1.min.js
   - src: /assets/js/scripts.js
 ---
 
