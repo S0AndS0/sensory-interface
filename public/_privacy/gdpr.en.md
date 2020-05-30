@@ -172,7 +172,7 @@ ___
 {{ page.company.name }} would like to make sure you are fully aware of all your data protection rights. Every client is entitled to the following:
 
 
-- **The right to access** -- You have the right to request {{ page.company.name }} for copies of your personal data. We mach charge you a small fee for this service.
+- **The right to access** -- You have the right to request {{ page.company.name }} for copies of your personal data. We may charge you a small fee for this service.
 
 - **The right to rectification** -- You have the right to request that {{ page.company.name }} correct any information you believe is inaccurate. You also have the right to request {{ page.company.name }} to complete the information you believe is incomplete.
 
